@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Download Feodo Tracker's blocklist to protect your network from Dridex and Emotet/Heodo">
+    <meta name="keywords" content="abuse.ch, malware, botnets, ioc, list, botnet, tracker, feodo, heodo, emotet, blocklist, blacklist, download, suricata, snort, ids, c2" />
+    <link rel="icon" href="/favicon.ico">
+    <title>Feodo Tracker | Blocklist</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="/css/jumbotron.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-green">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="/images/feodotracker_logo.png" width="190" height="40" alt="Feodo Tracker">
+          </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/browse/" title="Browse Feodo Tracker">Browse</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/blocklist/" title="Blocklist">Blocklist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/statistics/" title="Statistics">Statistics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/" title="About">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="mt-5">Blocklist</h1>
+      <p>Feodo Tracker offers various blocklist in different formats for different purposes. The blacklists are documented below.</p>
+      <div class="list-group">
+       <a href="#ip-blocklist" class="list-group-item list-group-item-action">Botnet C2 IP Blocklist</a>
+       <a href="#ip-ids" class="list-group-item list-group-item-action">Suricata Botnet C2 IP Ruleset</a>
+       <a href="#malware-hashes" class="list-group-item list-group-item-action">Malware hashes</a>
+       <a href="#tos" class="list-group-item list-group-item-action">Terms of Services</a>
+      </div>
+      <section id="ip-blocklist">
+        <h2>Botnet C2 IP Blocklist</h2>
+        <hr>
+        <p>Dridex and Emotet/Heodo botnet command&amp;control servers (C&amp;Cs) reside on a compromised server or a server that has been rent and setup by the botnet herder itself for the sole purpose of botnet hosting. Feodo Tracker offers a blocklist of IP addresses that are associated with such botnet C&amp;Cs which can be used to detect and block botnet C2 traffic from infected machines towards the internet, leaving your network. <strong>An IP address will only get added to the blocklist if it responds with a valid botnet C2 response</strong>. However, a botnet C2 may become offline later. The Botnet C2 IP Blocklist is available in different formats documented below.</p>
+        <p>The Botnet C2 IP Blocklist gets generated every 5 minutes. Please do not fetch it more often than every 5 minutes.</p>
+        <p>The CSV is useful if you want to process the IP blocklist further, e.g. loading them into your SIEM. The CSV contains the following values:</p>
+        <ul>
+          <li>Firstseen</li>
+          <li>Destination IP (DstIP)</li>
+          <li>Destination Port (DstPort)</li>
+          <li>Malware family</li>
+        </ul>
+        <div class="alert alert-info" role="alert">
+          <h4 class="alert-heading">Note</h4>
+          <p>As IP addresses are getting recycled and reused, this blocklist only botnet C2s that are either active or that have been last seen in the <strong>past 30 days</strong>. The false positive rate for this blocklist should therefore be low.</p>
+        </div>
+        <p><a class="btn btn-primary" href="/downloads/ipblocklist.csv" title="download Botnet C2 IP Blacklist (CSV)" target="_parent" role="button">Download CSV</a></p>
+        <p>In addition, there is an <em>IPs only</em> list available for download below. This is handy if you want to use botnet C&amp;Cs tracked by Feodo Tracker as a list of Indicator Of Compromise (IOC).</p>
+        <p><a class="btn btn-primary" href="/downloads/ipblocklist.txt" title="download Botnet C2 IP Blacklist (IPs only)" target="_parent" role="button">Download IPs only</a></p>
+        <p>If you want to fetch a comprehensive list of all botnet C2s Feodo Tracker has ever seen (and no matter if they have ever been seen being active/online or not), please use the CSV provided below.</p>
+        <div class="alert alert-warning" role="alert">
+          <h4 class="alert-heading">Caution!</h4>
+          <p>I strongly recommend you to <strong>not use the aggressive version</strong> of the Botnet C2 IP blocklist as it definitely <strong>will cause false positives</strong>. If you want to reduce the amount of false positives, use the blacklist above this box. If you want to get maximum protection and don't care about false positives, use the blacklist below this box (not recommended).</p>
+        </div>
+        <p><a class="btn btn-primary" href="/downloads/ipblocklist_aggressive.csv" title="download Botnet C2 IP Blacklist (CSV) - Aggressive" target="_parent" role="button">Download CSV (Aggressive)</a></p>
+        <p>In addition, there is an <em>IPs only</em> list available for download below. This is handy if you want to use botnet C&amp;Cs tracked by Feodo Tracker as a list of Indicator Of Compromise (IOC).</p>
+        <p><a class="btn btn-primary" href="/downloads/ipblocklist_aggressive.txt" title="download Botnet C2 IP Blacklist (CSV)" target="_parent" role="button">Download IPs only (Aggressive)</a></p>
+      </section>
+      <section id="ip-ids">
+        <h2>Suricata Botnet C2 IP Ruleset</h2>
+        <hr>
+        <p>The Suricata Botnet C2 IP Ruleset contains Dridex and Emotet/Heodo botnet command&amp;control servers (C&amp;Cs) tracked by Feodo Tracker and can be used for both, <a href="http://suricata-ids.org/" target="_blank" title="Suricata IDS/IPS">Suricata</a> and <a href="https://www.snort.org/" target="_blank" title="Snort IDS/IPS">Snort</a> open source IDS/IPS. If you are running Suricata or Snort, you can use this ruleset to detect and/or block network connections towards hostline servers (IP address:port combination).</p>
+        <p>The Suricata Botnet C2 IP Ruleset gets generated every 5 minutes. Please do not fetch it more often than every 5 minutes.</p>
+        <div class="alert alert-info" role="alert">
+          <h4 class="alert-heading">Note</h4>
+          <p>As IP addresses are getting recycled and reused, this blocklist only botnet C2s that are either active or that have been last seen in the <strong>past 30 days</strong>. The false positive rate for this blocklist should therefore be low.</p>
+        </div>
+        <p><a class="btn btn-primary" href="/downloads/feodotracker.rules" title="download Suricata IDS Ruleset" target="_parent" role="button">Download IDS Ruleset (Suricata and Snort)</a></p>
+        <p><a class="btn btn-primary" href="/downloads/feodotracker.tar.gz" title="download Suricata IDS Ruleset - tar.gz" target="_parent" role="button">Download IDS Ruleset (Suricata and Snort) - tar.gz</a></p>
+        <p>If you want to fetch a comprehensive list of all botnet C2s Feodo Tracker has ever seen (and no matter if they have ever been seen being active/online or not), please use the CSV provided below.</p>
+        <div class="alert alert-warning" role="alert">
+          <h4 class="alert-heading">Caution!</h4>
+          <p>I strongly recommend you to <strong>not use the aggressive ruleset</strong> of the Botnet C2 IP list as it definitely <strong>will cause false positives</strong>. If you want to reduce the amount of false positives, use the ruleset above this box. If you want to get maximum protection and don't care about false positives, use the ruleset below this box (not recommended).</p>
+        </div>
+        <p><a class="btn btn-primary" href="/downloads/feodotracker_aggressive.rules" title="download Suricata IDS Ruleset (Aggressive)" target="_parent" role="button">Download IDS Ruleset (Aggressive)</a></p>
+        <p><a class="btn btn-primary" href="/downloads/feodotracker_aggressive.tar.gz" title="download Suricata IDS Ruleset (Aggressive)" target="_parent" role="button">Download IDS Ruleset (Aggressive) - tar.gr</a></p>
+      </section>
+      <section id="malware-hashes">
+        <h2>Malware Hashes</h2>
+        <hr>
+        <p>Feodo Tracker publishes a list of hashes (MD5) associated with Dridex and Emotet/Heodo malware samples.</p>
+        <p>The list of Malware Hashes gets generated every 5 minutes. Please do not fetch it more often than every 5 minutes.</p>
+        <p>The CSV is useful if you want to process these malware hashes further, e.g. loading them into your SIEM. The CSV contains the following values:</p>
+        <ul>
+          <li>Firstseen</li>
+          <li>MD5 hash</li>
+          <li>Malware family</li>
+        </ul>
+        <p><a class="btn btn-primary" href="/downloads/malware_hashes.csv" title="download Malware Hashes" target="_parent" role="button">Download CSV</a></p>
+        <p>In addition, there is an <em>hashes only</em> list available for download below. This is handy if you want to use these hashes as a list of Indicator Of Compromise (IOC) and e.g. watch out for those or block them on your network perimeter (such as mail gateway or firewall) or on your client machines.</p>
+        <p><a class="btn btn-primary" href="/downloads/malware_hashes.txt" title="download Botnet C2 IP Blacklist (IPs only)" target="_parent" role="button">Download hashes only</a></p>
+      </section>
+      <section id="tos">
+        <h2>Terms of Services (ToS)</h2>
+        <hr>
+        <p>By using the website of Feodo Tracker, or any of the services / datasets referenced above, you agree that:</p>
+        <ul>
+          <li>All datasets offered by Feodo Tracker can be used for both, commercial and non-commercial purpose without any limitations (<a href="https://creativecommons.org/share-your-work/public-domain/cc0" target="_blank" title="CC0 - No Rights Reserved">CC0</a>)</li>
+          <li>Any data offered by Feodo Tracker is served <em>as it is</em> on best effort</li>
+          <li>abuse.ch can not be held liable for any false positive or damage caused by the use of the website or the datasets offered above</li>
+        </ul>
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading"><img src="/images/icons/gift.svg" alt="donate" /> Vendor note - your help is needed</h4>
+          <p> <a href="https://abuse.ch" title="abuse.ch" target="_blank">abuse.ch</a> is a non-profit project which relies on donations in order to continue to operate. If you are a vendor and you would like to integrate data from abuse.ch into your products (or for the purpose of reselling it), you are free to do so (<a href="https://creativecommons.org/share-your-work/public-domain/cc0" target="_blank" title="CC0 - No Rights Reserved">CC0</a>). However, I kindly ask you to consider to support abuse.ch with a donation (e.g. in form of a hosting plan). If you want to do so, I would be very happy to get a note from you at coSntacPtAmeM@abuse.ch (remove all capital letters).</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <hr>
+      <p>&copy; abuse.ch 2019</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

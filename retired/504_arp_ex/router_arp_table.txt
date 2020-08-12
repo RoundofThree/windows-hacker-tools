@@ -1,0 +1,17 @@
+Router# sh arp
+Protocol  Address           Age (min)  Hardware Addr   Type   Interface
+Internet  10.10.1.1                -   000c.29cd.c124  ARPA   Ethernet0/0
+Internet  10.12.1.2                -   000c.29cf.d920  ARPA   Ethernet0/1
+Internet  10.12.1.10               -   000c.295d.94b6  ARPA   Ethernet0/1
+Internet  10.12.1.11               -   000c.293e.f973  ARPA   Ethernet0/1
+Internet  10.12.1.13               -   bbbb.bbbb.bbbb  ARPA   Ethernet0/1
+Internet  10.12.1.14               -   000c.29b6.9cbd  ARPA   Ethernet0/1
+Internet  10.12.1.17               -   000c.2937.a4de  ARPA   Ethernet0/1
+Internet  10.12.1.20               -   000c.414a.ee62  ARPA   Ethernet0/1
+Internet  10.12.1.21               -   0003.93ef.53fe  ARPA   Ethernet0/1
+Internet  10.12.1.28               -   000c.413b.944f  ARPA   Ethernet0/1
+Internet  10.12.1.32               -   0017.f275.4eee  ARPA   Ethernet0/1
+Internet  10.12.1.36               -   0003.93ad.3f82  ARPA   Ethernet0/1
+Internet  10.12.1.38               -   0000.0c3e.5fc2  ARPA   Ethernet0/1
+Internet  10.12.1.44               -   000c.297b.2044  ARPA   Ethernet0/1
+Internet  10.12.1.47               -   000c.29ab.01f4  ARPA   Ethernet0/1

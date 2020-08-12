@@ -1,0 +1,66 @@
+                     Microsoft DHCP Service Activity Log
+
+
+Event ID  Meaning
+00        The log was started.
+01        The log was stopped.
+02        The log was temporarily paused due to low disk space.
+10        A new IP address was leased to a client.
+11        A lease was renewed by a client.
+12        A lease was released by a client.
+13        An IP address was found to be in use on the network.
+14        A lease request could not be satisfied because the scope's
+          address pool was exhausted.
+15        A lease was denied.
+16        A lease was deleted.
+17        A lease was expired.
+20        A BOOTP address was leased to a client.
+21        A dynamic BOOTP address was leased to a client.
+22        A BOOTP request could not be satisfied because the scope's
+          address pool for BOOTP was exhausted.
+23        A BOOTP IP address was deleted after checking to see it was
+          not in use.
+24        IP address cleanup operation has began.
+25        IP address cleanup statistics.
+30        DNS update request to the named DNS server
+31        DNS update failed
+32        DNS update successful
+50+       Codes above 50 are used for Rogue Server Detection information.
+
+ID,Date,Time,Description,IP Address,Host Name,MAC Address
+00,07/15/09,13:50:58,Started,,,,
+55,07/15/09,13:51:04,Authorized(servicing),,,,
+30,07/15/09,13:53:13,DNS Update Request,10.1.12.10,ALICE.,,
+10,07/15/09,13:53:13,Assign,10.12.1.10,EBISHOP,000C295D94B6,
+31,07/15/09,13:53:13,DNS Update Failed,10.12.1.10,ALICE.,-1,
+10,07/15/09,13:54:26,Assign,10.12.1.10,EBISHOP,000C295D94B6,
+10,07/15/09,14:00:50,Assign,10.12.1.11,MPARKMAN,000C29BDC706,
+12,07/15/09,14:01:46,Release,10.12.1.11,MPARKMAN,000C29BDC706,
+30,07/15/09,14:02:20,DNS Update Request,11.1.12.10,SWALKER.,,
+10,07/15/09,14:02:20,Assign,10.12.1.11,SWALKER.,000C293EF973,
+31,07/15/09,14:02:20,DNS Update Failed,10.12.1.11,SWALKER.,-1,
+10,07/15/09,14:03:34,Assign,10.12.1.12,,000C29674A3F,
+30,07/15/09,14:05:45,DNS Update Request,13.1.12.10,ALICE.,,
+10,07/15/09,14:05:45,Assign,10.12.1.13,ALICE.,000C295223BC,
+31,07/15/09,14:05:45,DNS Update Failed,10.12.1.13,ALICE.,-1,
+10,07/15/09,14:09:29,Assign,10.12.1.14,JJONES,000C29B69CBD,
+12,07/15/09,14:10:23,Release,10.12.1.12,,000C29674A3F,
+10,07/15/09,14:17:27,Assign,10.12.1.17,BWILSON.,000C2937A4DE,
+31,07/15/09,14:17:27,DNS Update Failed,10.12.1.17,BWILSON.,-1,
+10,07/15/09,14:24:59,Assign,10.12.1.28,JCARTER.,000C413B944F,
+31,07/15/09,14:24:59,DNS Update Failed,10.12.1.28,JCARTER.,-1,
+10,07/15/09,14:26:00,Assign,10.12.1.21,ABLAKE.,000393EF53FE,
+31,07/15/09,14:26:00,DNS Update Failed,10.12.1.21,ABLAKE.,-1,
+10,07/15/09,14:31:49,Assign,10.12.1.47,VSMITH,000C29AB01F4,
+31,07/15/09,14:31:49,DNS Update Failed,10.12.1.47,VSMITH,-1,
+12,07/15/09,14:49:58,Release,10.12.1.47,VSMITH,000C29AB01F4,
+10,07/15/09,15:02:05,Assign,10.12.1.38,JCASEY.,00000C3E5FC2,
+31,07/15/09,15:02:05,DNS Update Failed,10.12.1.38,JCASEY.,-1,
+10,07/15/09,15:17:33,Assign,10.12.1.20,HDEACON.,000C414AEE62,
+31,07/15/09,15:17:33,DNS Update Failed,10.12.1.20,HDEACON.,-1,
+10,07/15/09,15:18:43,Assign,10.12.1.44,MGRIMES.,000C297B2044,
+31,07/15/09,15:18:43,DNS Update Failed,10.12.1.44,MGRIMES.,-1,
+10,07/15/09,15:31:49,Assign,10.12.1.36,DFARGO.,000393AD3F82,
+31,07/15/09,15:31:49,DNS Update Failed,10.12.1.36,DFARGO.,-1,
+10,07/15/09,15:39:11,Assign,10.12.1.32,CBARTOWSKI.,0017F2754EEE,
+31,07/15/09,15:39:11,DNS Update Failed,10.12.1.32,CBARTOWSKI.,-1,

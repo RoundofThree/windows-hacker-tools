@@ -1,0 +1,9 @@
+Alice's ARP Table:
+
+C:\> arp -a
+
+Interface: 10.12.1.13 --- 0x2
+  Internet Address      Physical Address      Type
+  10.12.1.1             aa-aa-aa-aa-aa-aa     dynamic
+  10.12.1.2             00-0c-29-cf-d9-20     dynamic
+

@@ -1,0 +1,27 @@
+Switch# show mac-address-table 
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+ All    0014.1c40.b080    STATIC      CPU
+ All    0100.0ccc.cccc    STATIC      CPU
+ All    0100.0ccc.cccd    STATIC      CPU
+ All    0100.0cdd.dddd    STATIC      CPU
+   1    000f.1fd7.d85c    DYNAMIC     Fa0/10
+   1    000c.29cf.d920    DYNAMIC     Fa0/11
+   1    000c.413b.944f    DYNAMIC     Fa0/12
+   1    000c.295d.94b6    DYNAMIC     Fa0/13
+   1    0000.0c3e.5fc2    DYNAMIC     Fa0/14
+   1    000c.29ab.01f4    DYNAMIC     Fa0/15
+   1    aaaa.aaaa.aaaa    DYNAMIC     Fa0/15
+   1    bbbb.bbbb.bbbb    DYNAMIC     Fa0/15
+   1    0003.93ef.53fe    DYNAMIC     Fa0/16
+   1    000c.293e.f973    DYNAMIC     Fa0/17
+   1    000c.29b6.9cbd    DYNAMIC     Fa0/18
+   1    000c.414a.ee62    DYNAMIC     Fa0/19
+   1    000c.2937.a4de    DYNAMIC     Fa0/20
+   1    000c.2952.23bc    DYNAMIC     Fa0/21
+   1    000c.297b.2044    DYNAMIC     Fa0/22
+   1    000c.29bd.c706    DYNAMIC     Fa0/23
+   1    0003.93ad.3f82    DYNAMIC     Fa0/24
+   1    0017.f275.4eee    DYNAMIC     Fa0/25
+

@@ -1,0 +1,229 @@
+#Software:,Microsoft,Internet,Information,Services,6,,,,,,,,,,,,,,,
+#Version:,1,,,,,,,,,,,,,,,,,,,
+#Date:,1/9/14,0:00:05,,,,,,,,,,,,,,,,,,
+#Fields:,,,,,,,,,,,,,,,,,,,,
+date,time,c-ip,cs-username,s-sitename,s-computername,s-ip,s-port,cs-method,cs-uri-stem,cs-uri-query,sc-status,sc-win32-status,sc-bytes,cs-bytes,time-taken,cs-version,cs-host,cs(User-Agent),cs(Cookie),cs(Referer)
+1/9/14,0:00:05,10.10.10.247,p01c11m112.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,EHLO,-,#NAME?,250,0,318,27,0,SMTP,-,-,-,-
+1/9/14,0:00:05,10.10.10.247,p01c11m112.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,MAIL,-,+FROM:<do_not_reply@target.tgt>,250,0,45,32,0,SMTP,-,-,-,-
+1/9/14,0:00:05,10.10.10.247,p01c11m112.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<treasury@target.tgt>,250,0,36,33,0,SMTP,-,-,-,-
+1/9/14,0:00:05,10.10.10.247,p01c11m112.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,DATA,-,<483eef37-ae98-4950-8a3d-deefeb7d0acf@CGYPRDEXHUB01.targetnorth.local>,250,0,151,3419,328,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,"220+targetEXMB01.target1.local+Microsoft+ESMTP+MAIL+Service,+Version:+6.0.3790.3959+ready+at++Sat,+15+May+2010+02:00:06++0200+",0,0,124,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,EHLO,-,targetexfe01.target1.local,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250-targetEXMB01.target1.local+Hello+[10.12.1.11],0,0,48,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,334+GSSAPI+supported,0,0,20,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,235+2.7.0+Authentication+successful.,0,0,36,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,X-LINK2STATE,-,LAST+CHUNK={0000006a}+MULTI+(5)+({00000051}+DIGEST_QUERY+50d8e99fdb9fac4d90eb79c8587b8944+1511de753fe5360a5b5fec88c815b799++)++,0,0,12,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,200+LAST+CHUNK={00000029}+MULTI+(5)+({00000010}+DONE_RESPONSE++)++,0,0,66,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,MAIL,-,FROM:<do_not_reply@target.tgt>+AUTH=<>,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+2.1.0+do_not_reply@target.tgt....Sender+OK,0,0,43,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,RCPT,-,TO:<treasury@target.tgt>,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+2.1.5+treasury@target.tgt+,0,0,34,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,XEXCH50,-,1084+2,0,0,7,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,354+Send+binary+data,0,0,20,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+XEXCH50+OK,0,0,14,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,BDAT,-,3660+LAST,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+2.6.0+<483eef37-ae98-4950-8a3d-deefeb7d0acf@CGYPRDEXHUB01.targetnorth.local>+Queued+mail+for+delivery,0,0,103,0,31,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,QUIT,-,-,0,0,4,0,47,SMTP,-,-,-,-
+1/9/14,0:00:05,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,221+2.0.0+targetEXMB01.target1.local+Service+closing+transmission+channel,0,0,71,0,47,SMTP,-,-,-,-
+1/9/14,0:00:05,10.10.10.247,p01c11m112.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,QUIT,-,p01c11m112.lilliputmail.tgt,240,1109,73,4,0,SMTP,-,-,-,-
+1/9/14,0:00:40,8.8.8.247,p01c12m061.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,EHLO,-,#NAME?,250,0,318,27,0,SMTP,-,-,-,-
+1/9/14,0:00:40,8.8.8.247,p01c12m061.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,MAIL,-,+FROM:<b-den-891780425-1@markalerts.delta.com>,250,0,63,50,0,SMTP,-,-,-,-
+1/9/14,0:00:40,8.8.8.247,p01c12m061.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<VADIRAJ.CHENJI@target.tgt>,250,0,42,39,0,SMTP,-,-,-,-
+1/9/14,0:00:40,8.8.8.247,p01c12m061.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,DATA,-,+<4513830.862339.1273881638611.JavaMail.mail01@den-app-sca01>,250,0,144,12722,579,SMTP,-,-,-,-
+1/9/14,0:00:41,192.168.49.7,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,"220+targetEXMB02.target1.local+Microsoft+ESMTP+MAIL+Service,+Version:+6.0.3790.3959+ready+at++Sat,+15+May+2010+02:00:42++0200+",0,0,124,0,16,SMTP,-,-,-,-
+1/9/14,0:00:41,192.168.49.7,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,EHLO,-,targetexfe01.target1.local,0,0,4,0,16,SMTP,-,-,-,-
+1/9/14,0:00:41,192.168.49.7,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250-targetEXMB02.target1.local+Hello+[10.12.1.11],0,0,48,0,16,SMTP,-,-,-,-
+1/9/14,0:00:41,192.168.49.7,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,334+GSSAPI+supported,0,0,20,0,16,SMTP,-,-,-,-
+1/9/14,0:00:41,192.168.49.7,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,235+2.7.0+Authentication+successful.,0,0,36,0,16,SMTP,-,-,-,-
+1/9/14,0:00:41,192.168.49.7,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,X-LINK2STATE,-,LAST+CHUNK={0000006a}+MULTI+(5)+({00000051}+DIGEST_QUERY+50d8e99fdb9fac4d90eb79c8587b8944+1511de753fe5360a5b5fec88c815b799++)++,0,0,12,0,16,SMTP,-,-,-,-
+1/9/14,6:25:54,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+S704LOG@shell.com+ok+(RCPTMode:+normal),0,0,43,0,1172,SMTP,-,-,-,-
+1/9/14,6:25:54,8.8.8.95,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,DATA,-,-,0,0,4,0,1172,SMTP,-,-,-,-
+1/9/14,6:25:54,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,354+Start+mail+input;+end+with+<CRLF>.<CRLF>,0,0,44,0,1328,SMTP,-,-,-,-
+1/9/14,6:25:54,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+[OUTBOUND]+17e3eeb4.0.57524.00-003.129253.p01c12o143.lilliputmail.tgt+QueueSafe,0,0,78,0,1891,SMTP,-,-,-,-
+1/9/14,6:25:54,8.8.8.95,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,QUIT,-,-,0,0,4,0,1906,SMTP,-,-,-,-
+1/9/14,6:25:54,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,221+p01c12o143.lilliputmail.tgt+Service+closing+transmission+channel+[57524.01],0,0,74,0,2047,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,EHLO,-,#NAME?,250,0,316,42,0,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,x-exps,-,#NAME?,0,0,22,13,0,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,x-link2state,-,+LAST+CHUNK={0000006a}+MULTI+(5)+({00000051}+DIGEST_QUERY+50d8e99fdb9fac4d90eb79c8587b8944+bbdb29180cd95fe9399988da72937613++)++,200,0,68,140,0,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,MAIL,-,+FROM:<OTAHSE@target.tgt>,250,0,46,33,0,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<paul@pauldotcom>,250,0,43,40,0,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,xexch50,-,2590,354,0,22,14,0,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,BDAT,-,+<C279DBF2AD0A3C488904D2B416C3A0CE13D05D@abzocaprdex01.targetbratani.target1.local>,250,0,116,76009,203,SMTP,-,-,-,-
+1/9/14,6:26:30,209.20.73.195,abzocaprdex01.targetbratani.target1.local,SMTPSVC1,targetEXFE01,10.12.1.11,0,QUIT,-,abzocaprdex01.targetbratani.target1.local,240,968,73,4,0,SMTP,-,-,-,-
+1/9/14,6:26:31,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,"220+p01c12o145.lilliputmail.tgt+ESMTP+mxl_mta-6.6.0-0+[4fb05940.21686.00-010];+Sat,+15+May+2010+00:26:31+-0600+(MDT);+NO+UCE,+OUTBOUND",0,0,129,0,141,SMTP,-,-,-,-
+1/9/14,6:26:31,8.8.8.95,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,EHLO,-,targetexfe01.target1.local,0,0,4,0,141,SMTP,-,-,-,-
+1/9/14,6:26:31,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250-p01c12o145.lilliputmail.tgt,0,0,26,0,282,SMTP,-,-,-,-
+1/9/14,6:26:31,8.8.8.95,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,MAIL,-,FROM:<OTAHSE@target.tgt>,0,0,4,0,282,SMTP,-,-,-,-
+1/9/14,6:26:31,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+Sender+Ok,0,0,13,0,422,SMTP,-,-,-,-
+1/9/14,6:26:31,8.8.8.95,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,RCPT,-,TO:<john@blackhillsinfosec.com>,0,0,4,0,422,SMTP,-,-,-,-
+1/9/14,6:26:33,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+larry@pauldotcom.com+ok+(RCPTMode:+normal),0,0,56,0,1969,SMTP,-,-,-,-
+1/9/14,6:26:33,8.8.8.95,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,DATA,-,-,0,0,4,0,1969,SMTP,-,-,-,-
+1/9/14,6:26:33,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,354+Start+mail+input;+end+with+<CRLF>.<CRLF>,0,0,44,0,2110,SMTP,-,-,-,-
+1/9/14,6:26:34,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+[OUTBOUND]+79e3eeb4.0.21686.00-010.49991.p01c12o145.lilliputmail.tgt+QueueSafe,0,0,77,0,3266,SMTP,-,-,-,-
+1/9/14,6:26:34,8.8.8.95,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,QUIT,-,-,0,0,4,0,3282,SMTP,-,-,-,-
+1/9/14,6:26:34,8.8.8.95,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,221+p01c12o145.lilliputmail.tgt+Service+closing+transmission+channel+[21686.01],0,0,74,0,3422,SMTP,-,-,-,-
+1/9/14,6:27:49,10.10.10.247,p01c11m117.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,EHLO,-,p01c11m117.lilliputmail.tgt,250,0,318,27,0,SMTP,-,-,-,-
+1/9/14,6:27:49,10.10.10.247,p01c11m117.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,MAIL,-,+FROM:<s.akiyoshi@mitsui.com>,250,0,46,33,0,SMTP,-,-,-,-
+1/9/14,6:27:49,10.10.10.247,p01c11m117.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<ed@counterhack.com>,250,0,39,36,0,SMTP,-,-,-,-
+1/9/14,6:27:50,10.10.10.247,p01c11m117.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,DATA,-,+<D361A4ED32AB484E8A486368D97E7404359F2A93@TKACE21C.mbklogon.mitsui.com>,250,0,155,12073,656,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,"220+targetEXMB01.target1.local+Microsoft+ESMTP+MAIL+Service,+Version:+6.0.3790.4675+ready+at++Sat,+15+May+2010+08:27:50++0200+",0,0,124,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,EHLO,-,targetexfe01.target1.local,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250-targetEXMB01.target1.local+Hello+[10.12.1.11],0,0,48,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,334+GSSAPI+supported,0,0,20,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,235+2.7.0+Authentication+successful.,0,0,36,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,X-LINK2STATE,-,LAST+CHUNK={0000006a}+MULTI+(5)+({00000051}+DIGEST_QUERY+50d8e99fdb9fac4d90eb79c8587b8944+bbdb29180cd95fe9399988da72937613++)++,0,0,12,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,200+LAST+CHUNK={00000029}+MULTI+(5)+({00000010}+DONE_RESPONSE++)++,0,0,66,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,MAIL,-,FROM:<jack@pauldotcom.com>+AUTH=<>,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+2.1.0+jack@pauldotcom.com....Sender+OK,0,0,44,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,RCPT,-,TO:<mike@pauldotcom.com>,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+2.1.5+Imad.Ghanem@target.tgt+,0,0,37,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,XEXCH50,-,1084+2,0,0,7,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,354+Send+binary+data,0,0,20,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,250+XEXCH50+OK,0,0,14,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,BDAT,-,12265+LAST,0,0,4,0,15,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,-,25,QUIT,-,-,0,0,4,0,47,SMTP,-,-,-,-
+1/9/14,6:27:50,192.168.49.6,OutboundConnectionResponse,SMTPSVC1,targetEXFE01,-,25,-,-,221+2.0.0+targetEXMB01.target1.local+Service+closing+transmission+channel,0,0,71,0,47,SMTP,-,-,-,-
+1/9/14,6:27:50,10.10.10.247,p01c11m117.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,QUIT,-,p01c11m117.lilliputmail.tgt,240,1437,73,4,0,SMTP,-,-,-,-
+1/9/14,6:28:40,192.168.49.144 ,p01c12m075.lilliputmail.tgt,SMTPSVC1,targetEXFE01,10.12.1.11,0,EHLO,-,+p01c12m075.lilliputmail.tgt,250,0,318,27,0,SMTP,-,-,-,-
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,MAIL,-,+FROM:<robert@target.tgt>,250,0,53,40,0,SMTP,-,-,-,-
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<ceo@target.ae>,250,0,24,21,0,SMTP,-,-,-,-
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<president@target.ae>,250,0,30,27,0,SMTP,-,-,-,-
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<coo@target.ae>,250,0,24,21,0,SMTP,-,-,-,-
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<hr@target.ae>,250,0,23,20,0,SMTP,-,-,-,-
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<aaron.miller@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<adam.schwab@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<alan.fickbohm@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<alan.todd@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<alan.bakeberg@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<alice.whitebird@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<alison.kiesz@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<amanda.schmitgen@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<amber.anders@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<amy.gorham@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<amy.iversen-pollreisz@state.sd.>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<amy.kainz@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<andrea.meyers@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<andrea.hewitt@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<andrew.fergel@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<andy.mobley@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<anissa.grambihler@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<anjar.voorhees@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<ann.larsen@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<ann.hirsch@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<annie.mehlhaff@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<annie.doshier@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<ardys.roseland@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<arianna.rehfeldt@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<arlene.koch@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<arline.hammer@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<art.aplan@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<ashley.klatt@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<barb.hemmelman@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<barb.buhler@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<barry.olson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<becky.kramp@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<ben.orsbon@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bernie.moran@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<betty.morford@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<betty.leidholt@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<betty.mccambridge@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bev.wilson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<beverly.duffel@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<beverly.wilson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bill.regynski@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bill.chalcraft@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bill.markley@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bill.molseed@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bill.rath@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<billiejo.waara@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bob.marler@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bob.ensz@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bob.bosse@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bob.townsend@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bob.dooley@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bobbi.huck@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bonnie.bauder@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bonnie.wiehoff@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bonnie.jameson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bonnie.fosheim@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brad.stover@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brad.trautman@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brad.berven@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brad.maupin@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brenda.even@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brenda.badger@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brenda.lemburg@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brenda.thomas@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brenda.hyde@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brenda.hemmelman@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brent.dowling@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brett.fligge@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.rounds@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.garbisch@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.bondy@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.scott@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.oakland@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.hertel@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.gustafson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.hipple@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.moore@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brian.gevik@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brock.greenfield@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<brooke.bohnenkamp@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bruce.lindholm@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bruce.christensen@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bruce.jacobson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bruce.ward@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<bryan.gortmaker@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<candi.hettinger@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<candise.byllesby@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<candy.holbrook@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carl.rapp@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carla.wagner@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carla.leingang@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carmen.magnus@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carol.olson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carol.huber@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carol.schmautz@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carol.robertson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carol.ruen@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carol.kelso@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carol.hageman@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<caroline.uecker@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carrie.tschetter@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<carrie.johnson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cary.cleland@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<caryn.hojer@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chad.babcock@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chad.tussing@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chad.kremer@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<charles.anderson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<charles.clark@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<charles.mcguigan@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<charles.ray@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<charlotte.johnson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cheriee.watterson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chris.petersen@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chris.nelson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chris.nelson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<christopher.blair@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<christopher.carlson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chuck.easter@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chuck.kevghas@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chuck.schlueter@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<chuck.gilson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cindy.kemnitz@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cindy.kiipman-viergets@state.sd>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cindy.willert@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cindy.longbrake@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cindy.peterson@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<clare.cholik@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<clark.haliburton@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<clark.hepper@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<claudia.cepak@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<cleo.shroyer@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<clifford.reuer@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<colin.keeler@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<colleen.winter@externalemail.com>,,,,,,,,,,
+1/9/14,6:28:40,192.168.49.144 ,OutboundConnectionCommand,SMTPSVC1,targetEXFE01,10.12.1.11,0,RCPT,-,+TO:<colleen.kozel@externalemail.com>,,,,,,,,,,
+Truncated,Truncated,Truncated,Truncated,Truncated,Truncated,Truncated,Truncated,Truncated,Truncated,Truncated,,,,,,,,,,
